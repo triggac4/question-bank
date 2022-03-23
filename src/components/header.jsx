@@ -8,8 +8,8 @@ const Header = () => {
                 El Academy Question Bank
             </h1>
             <div className="flex gap-8">
-                <Button text="Add Questions" />
-                <Button text="Select Question" />
+                <Button text="Add Questions" hover />
+                <Button text="Select Question" hover />
             </div>
         </header>
     );
