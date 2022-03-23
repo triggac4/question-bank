@@ -5,6 +5,10 @@
 }
 html {
     box-sizing: border-box;
+    height: 100%;
+}
+body {
+    height: 100%;
 }
 @tailwind base;
 @tailwind components;

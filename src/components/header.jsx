@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./button";
 
 const Header = () => {
     return (
@@ -7,12 +8,8 @@ const Header = () => {
                 El Academy Question Bank
             </h1>
             <div className="flex gap-8">
-                <button className="border-none hover:bg-blue-400 hover:text-white font-semibold p-4">
-                    Add Question
-                </button>
-                <button className="border-none hover:bg-blue-400 hover:text-white font-semibold p-4">
-                    Select Question
-                </button>
+                <Button text="Add Questions" />
+                <Button text="Select Question" />
             </div>
         </header>
     );
