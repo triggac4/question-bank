@@ -1,8 +1,9 @@
 import React from "react";
 
-const Button = ({ text, hover }) => {
+const Button = ({ text, hover, onClick }) => {
     return (
         <button
+            onClick={onClick}
             className={`border-none ${
                 hover ? "hover:bg-blue-400" : "bg-blue-400"
             } ${

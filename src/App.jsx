@@ -7,14 +7,14 @@ import MainContent from "./components/main_content";
 import ModalWrapper from "./modal/modal_wrapper";
 import Form from "./components/select_questions";
 function App() {
-    const [isOpen, setModal] = useState(true);
+    const [isOpen, setModal] = useState(false);
     return (
         <ModalContext.Provider value={{ modalState: isOpen, setModal }}>
-            {isOpen ? (
+            {isOpen && (
                 <ModalWrapper>
                     <Form />
                 </ModalWrapper>
-            ) : null}
+            )}
             <Header />
             <MainContent />
         </ModalContext.Provider>

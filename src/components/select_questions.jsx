@@ -7,7 +7,7 @@ const Form = () => {
                 <div className="w-40">course name</div>
                 <select
                     name="course name"
-                    className="w-40 text-white bg-blue-400 p-2 rounded-md"
+                    className="w-40 text-white bg-blue-400 p-2 rounded-md focus:outline-none"
                 >
                     <option value="python">python</option>
                     <option value="php">php</option>
@@ -19,7 +19,7 @@ const Form = () => {
                 <div className="w-40">section</div>
                 <select
                     name="section"
-                    className=" bg-blue-400 text-white w-40 p-2 rounded-md"
+                    className=" bg-blue-400 text-white w-40 p-2 rounded-md focus:outline-none"
                 >
                     <option value="python">section 1</option>
                     <option value="php">section 2</option>
