@@ -8,7 +8,7 @@ const Button = ({ text, hover, onClick }) => {
                 hover ? "hover:bg-blue-400" : "bg-blue-400"
             } ${
                 hover ? "hover:text-white" : "text-white"
-            } font-semibold p-2 rounded-sm capitalize`}
+            } font-semibold p-2 rounded-md capitalize`}
         >
             {text}
         </button>
