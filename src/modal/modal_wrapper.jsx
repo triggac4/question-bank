@@ -8,27 +8,22 @@ const ModalWrapper = ({ children }) => {
     return (
         <ReactPortal>
             <div
-                className="fixed inset-0 flex flex-col items-center justify-center"
+                className="fixed inset-0 flex flex-col items-center justify-center bg-modalWrapper"
                 onClick={() => setModal(false)}
             >
                 <div
-                    className="inset-0 bg-slate-400 z-20 flex flex-col items-center justify-center py-4 px-8 shadow-md"
+                    className="inset-0 bg-gray-100 z-20 flex flex-col items-center justify-center py-2 px-4 shadow-md"
                     onClick={(e) => e.stopPropagation()}
                 >
-                    <div className="flex justify-end w-full">
+                    <div className="flex justify-end w-full mb-4">
                         <button
-                            className="w-8 bg-transparent text-white hover:text-red-500 text-lg font-bold"
+                            className="w-8 bg-transparent text-blue-400 hover:text-red-500 text-lg font-bold"
                             onClick={() => setModal(false)}
                         >
-                            X
+                            &#10005;
                         </button>
                     </div>
-                    <div
-                        className="relative"
-                        style={{ width: "50vw", minHeight: "200px" }}
-                    >
-                        {children}
-                    </div>
+                    <div className="relative">{children}</div>
                 </div>
             </div>
         </ReactPortal>

@@ -2,9 +2,9 @@ import React from "react";
 import Button from "./button";
 const Form = () => {
     return (
-        <form className="flex flex-col justify-around h-full items-center">
-            <label class="flex w-full justify-center">
-                <div className="w-40">course name</div>
+        <form className="flex flex-col justify-around h-full gap-4 items-center">
+            <label className="flex w-full justify-center">
+                <div className="w-40 capitalize font-semibold">course name</div>
                 <select
                     name="course name"
                     className="w-40 text-white bg-blue-400 p-2 rounded-md focus:outline-none"
@@ -15,11 +15,11 @@ const Form = () => {
                     <option value="javascript">javascript</option>
                 </select>
             </label>
-            <label class="flex w-full justify-center">
-                <div className="w-40">section</div>
+            <label className="flex w-full justify-center">
+                <div className="w-40 capitalize font-semibold">section</div>
                 <select
                     name="section"
-                    className=" bg-blue-400 text-white w-40 p-2 rounded-md focus:outline-none"
+                    className=" bg-blue-400 text-white w-40 p-2 rounded-md  focus:outline-none"
                 >
                     <option value="python">section 1</option>
                     <option value="php">section 2</option>

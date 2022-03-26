@@ -8,11 +8,7 @@ const MainContent = () => {
             <h4 className="font-bold">
                 Welcome To El Academy's Question Application
             </h4>
-            <div className="flex flex-col justify-center gap-4">
-                <p>
-                    Please select question topics so we could generate them for
-                    you
-                </p>
+            <div>
                 <Button
                     text="select questions"
                     onClick={() => setModal(true)}
