@@ -1,11 +1,20 @@
 const fs = require("fs");
 const router = require("express").Router();
 
-const resultboolean = fs.readFileSync("./question/day 2/boolean-Answer.docx");
+router.route("/courses").get(async (req, res) => {
+    const result = fs.readdirSync("./question", "utf-8");
+    const mapped = result.map((e) => {
+        const files = fs.readdirSync(`./question/${e}`);
+        return { [e]: files };
+    });
+    res.json({ result: mapped });
+});
 
-const result = fs.readdirSync("./question", "utf8");
-router.route("/").get(async (req, res) => {
-    res.send(result);
+router.route("/courses/:course/:filename").get(async (req, res) => {
+    console.log("ran");
+    let { course, filename } = req.params;
+    course = "".replaceAll("%", " ");
+    res.download(`./question/${course}/${filename}`);
 });
 
 module.exports = router;
