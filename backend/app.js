@@ -1,6 +1,7 @@
 const express = require("express");
 require("express-async-errors");
 require("dotenv").config();
+const cors = require("cors");
 
 //import middlewares
 const notFound = require("./middleware/not-found");
@@ -11,6 +12,11 @@ const question = require("./router/question");
 
 const app = express();
 //use middleware
+app.use(
+    cors({
+        origin: "*",
+    })
+);
 app.use(express.json());
 app.use("/api/v1/question", question);
 app.use([notFound, errorHandler]);

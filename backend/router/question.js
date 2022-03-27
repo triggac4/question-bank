@@ -5,7 +5,7 @@ router.route("/courses").get(async (req, res) => {
     const result = fs.readdirSync("./question", "utf-8");
     const mapped = result.map((e) => {
         const files = fs.readdirSync(`./question/${e}`);
-        return { [e]: files };
+        return { course: e, section: files };
     });
     res.json({ result: mapped });
 });
