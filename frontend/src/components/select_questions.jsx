@@ -10,7 +10,8 @@ const Form = () => {
     useLayoutEffect(() => {
         const apiConsumer = new API();
         const set = async () => {
-            const response = await API.asyncWrapper(apiConsumer.getFileNames());
+            const response = await API.asyncWrapper(apiConsumer.getFileNames);
+            console.log(response);
             if (response) {
                 setResult(response.result);
             }
@@ -21,6 +22,7 @@ const Form = () => {
     let sections = [];
     result.forEach((e) => {
         courses.push(e.course);
+
         if (course === e.course) {
             sections = e.section;
         }

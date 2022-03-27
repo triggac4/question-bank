@@ -14,7 +14,7 @@ class API {
         if (result.status > 199 && result.status < 300) {
             return await result.json();
         } else {
-            throw Error(" something went wrong!");
+            throw new Error(" something went wrong!");
         }
     }
 
