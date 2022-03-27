@@ -10,10 +10,10 @@ router.route("/courses").get(async (req, res) => {
     res.json({ result: mapped });
 });
 
-router.route("/courses/:course/:filename").get(async (req, res) => {
-    console.log("ran");
-    let { course, filename } = req.params;
-    course = "".replaceAll("%", " ");
+router.route("/course").get(async (req, res) => {
+    let { course, filename } = req.query;
+    course = course.replaceAll("%", " ");
+    filename = filename.replaceAll("%", " ");
     res.download(`./question/${course}/${filename}`);
 });
 
