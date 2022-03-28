@@ -18,11 +18,14 @@ class API {
         }
     }
 
-    async getPath(course, filename) {
-        const courseParsed = course.replaceAll(" ", "%");
-        const filenameParsed = filename.replaceAll(" ", "%");
-        const path = `${API.serverhost}/course?course=${courseParsed}&filename=${filenameParsed}`;
-        return path;
+    static getPath(selected) {
+        if (selected.course) {
+            const courseParsed = selected.course.replaceAll(" ", "%");
+            const filenameParsed = selected.section.replaceAll(" ", "%");
+            const path = `${API.serverhost}/course?course=${courseParsed}&filename=${filenameParsed}`;
+            return path;
+        }
+        return "#";
     }
 }
 
