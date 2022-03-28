@@ -49,6 +49,7 @@ const Form = () => {
             <Select
                 label="course"
                 name="course name"
+                value={course}
                 options={courses}
                 onSelect={(e) => {
                     console.log("check");
@@ -59,6 +60,7 @@ const Form = () => {
                 label="section"
                 name="section"
                 options={sections}
+                value={section}
                 onSelect={(e) => {
                     setSection(e.target.value);
                 }}
