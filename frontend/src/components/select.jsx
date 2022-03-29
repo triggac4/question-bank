@@ -8,9 +8,10 @@ const Select = ({ name, label, options, onSelect, value }) => {
                 name={name}
                 className="min-w-max text-white bg-blue-400 p-2 rounded-md focus:outline-none"
                 onChange={(e) => onSelect(e)}
+                value={value}
             >
                 {options.map((e, i) => (
-                    <option value={e} key={i} selected={value === e}>
+                    <option value={e} key={i}>
                         {e}
                     </option>
                 ))}
