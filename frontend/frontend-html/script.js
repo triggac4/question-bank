@@ -25,11 +25,7 @@ let select_props = [
     },
     {
         course: "php",
-        section: [
-            "OOP answer original.docx",
-            "oop answers.docx",
-            "section php 3",
-        ],
+        section: ["OOP answer original.docx", "oop answers.docx"],
     },
     {
         course: "fundamentals of computer",
