@@ -1,0 +1,140 @@
+.display {
+    display: block;
+}
+.display-none {
+    display: none;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+#root {
+    height: 100%;
+}
+body {
+    height: 100%;
+    line-height: 1.2;
+    font-size: 1.3rem;
+}
+.header {
+    display: flex;
+    padding: 2rem 8rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.header h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 700;
+}
+.button-div {
+    display: flex;
+    gap: 4rem;
+}
+.select-question {
+    border: none;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-transform: capitalize;
+    background-color: deepskyblue;
+    color: aliceblue;
+}
+.main {
+    margin: 0 auto;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.main h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+.modal-inside {
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.modal-button-div {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.modal-button-div button {
+    border: none;
+    width: 4rem;
+    background-color: transparent;
+    color: deepskyblue;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.modal-button-div button:hover {
+    color: red;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    gap: 2rem;
+    align-items: center;
+}
+.label {
+    display: flax;
+    width: 100%;
+    justify-content: flex-start;
+}
+.label-text {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.select {
+    min-width: 25rem;
+    color: white;
+    background-color: deepskyblue;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+.select:focus {
+    outline: none;
+}
+.anchor {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}

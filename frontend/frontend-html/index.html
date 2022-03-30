@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Question Bank</title>
+    </head>
+    <body>
+        <div id="modal-root" class="display-none">
+            <div class="modal close-modal">
+                <div class="modal-inside">
+                    <div class="modal-button-div">
+                        <button class="close-modal">&#10005;</button>
+                    </div>
+                    <div style="position: relative">
+                        <form class="form">
+                            <label class="label">
+                                <div class="label-text">Course</div>
+                                <select
+                                    name="course"
+                                    class="select"
+                                    id="select-course"
+                                ></select>
+                            </label>
+                            <label class="label">
+                                <div class="label-text">Assignments</div>
+                                <select
+                                    name="course"
+                                    class="select"
+                                    id="select-section"
+                                ></select>
+                            </label>
+                            <a class="anchor" href="#"> Fetch Assignment </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="root">
+            <header class="header">
+                <h1>El Academy Question Bank</h1>
+                <div class="button-div">
+                    <button class="select-question">Select Question</button>
+                </div>
+            </header>
+            <main class="main">
+                <h4>Welcome To El Academy's Question Application</h4>
+                <div>
+                    <button class="select-question">Select Question</button>
+                </div>
+            </main>
+        </div>
+        <script src="script.js" />
+    </body>
+</html>

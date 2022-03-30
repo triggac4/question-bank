@@ -1,0 +1,40 @@
+1. Write a program which will count the "e" characters in the text 
+"elacademy".
+2. Create a script using a for loop to add all the integers between 0 and 30 
+and display the total.
+3. The Lagos state fishing club, which has 50 members, would like to 
+record all the boats for their members and most important, record the
+capacity of the boats in ton, to enable them rent them out properly.
+Boats come in the following sizes, 55tons, 120tons and 28tons
+You are to capture the names of the boats, phone number and size of 
+each boat. Grade according to size
+
+
+1. print("elacademy".count("e"))
+
+2. sum=0
+   for x in range(0,31):
+   	sum+=x
+
+
+3. def capture(size,numb,name):
+   	if(size>=120):
+        	grade="A"
+   	elif(size>=55):
+        	grade="B"
+   	elif(size>=22):
+        	grade="C"
+   	else:
+        	grade="D"
+
+   	return {
+        "size":size,
+        "number":numb,
+        "name":name,
+        "grade":grade
+    	}
+  #loop though the members and call the function it returns a 
+  #dictionary whichb you could add to a data collection like list..
+  #list of dictionaries 
+  print(capture(100,"09039388056","the ton"))
+
